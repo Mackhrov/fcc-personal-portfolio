@@ -1,0 +1,380 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/85024a94cc.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <title>Portfolio Makhrov</title>
+</head>
+<body>
+  <header>
+    <p>Makhrov Ivan</p>
+    <nav class="navbar" id="navbar">
+      <ul>
+        <li><a href="#top">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="welcome-section" class="sections">
+      <div>
+        <h1 class="p1">Welcome</h1>
+        <p class="p2">I am Ivan</p>
+        <p class="p3">Beginner developer</p>
+      </div>
+      <div>
+         <img src="https://avatars.githubusercontent.com/u/230984036?v=4" alt="my photo">
+      </div>
+    </section>
+
+    <section id="project-section" class="sections">
+      <h2>My projects</h2>
+        <div class="project-tile">
+            <a  id="profile-link" href="https://mackhrov.github.io/fcc-survey-form/" target="_blank">
+            Survey form
+            <img src="https://github.com/Mackhrov/fcc-survey-form/blob/main/image.png?raw=true" alt="screenshot survey form"/>
+            </a>
+          </div>
+
+          <div class="project-tile">
+            <a href="https://mackhrov.github.io/fcc-tribute-page/" target="_blank">
+            Tribute page
+            <img src="https://github.com/Mackhrov/fcc-tribute-page/blob/main/image.png?raw=true" alt="screenshot tribute page"/>
+            </a>
+          </div>
+
+          <div class="project-tile">
+            <a href="https://mackhrov.github.io/fcc-technical-documentation-page/" target="_blank">
+            Technical documentation
+            <img src="https://github.com/Mackhrov/fcc-technical-documentation-page/blob/main/image.png?raw=true" alt="screenshot technical documentation "/>
+            </a>
+          </div>
+      
+          <div class="project-tile">
+            <a href="https://mackhrov.github.io/fcc-product-landing-page/" target="_blank">
+            Product landing page
+            <img src="https://github.com/Mackhrov/fcc-product-landing-page/blob/main/image.png?raw=true" alt="screenshot product-landing-page"/>
+            </a>
+          </div>
+    </section> 
+
+    <section id="skills" class="sections">
+      <h2>Skills</h2>
+      <div class="skills-div">
+        <ul class="skills-list">
+          <li><i class="fa-solid fa-language"></i> English</li>
+          <li><i class="fa-brands fa-html5"></i> HTML</li>
+          <li><i class="fa-brands fa-css"></i> CSS</li>
+          <li><i class="fa-brands fa-github"></i> Git</li>
+        </ul>
+      <p>And the most important thing is continuous learning</p>
+    </section>
+  </main>
+  <footer>
+    <div class="contact" id="contact">
+      <p>Social</p>
+      <a href="mailto:makhrov1983@gmail.com"><i class="fa-solid fa-at" title="email"></i></a>
+      <a href="https://t.me/User1002332"><i class="fa-brands fa-telegram" title="telegram"></i></a>
+      <a href="https://github.com/Mackhrov"><i class="fa-brands fa-github" title="github"></i></a>
+      <p>&copy; 2025 <a href="https://github.com/Mackhrov" target="_blank">Ivan Makhrov</a> All Rights Reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
+
+** end of index.html **
+
+** start of styles.css **
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+  min-width: 200px;
+}
+
+body{
+  background-color: #caf0f8;
+  font-family: "Orbitron", sans-serif;
+  width: 100%;
+}
+
+header{
+  color: #03045e;
+  font-size: clamp(10px, 3vw, 1.1rem);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  background-color: #0076b67f;
+  backdrop-filter: blur(5px);
+  z-index: 10;
+}
+
+header :is(p ,a){
+  height: 100%;
+  display: inline-block;
+  border-radius: 10px;
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.191);
+}
+
+
+.navbar ul{
+  list-style: none;
+}
+
+.navbar li{
+  display: inline-block;
+  padding: 0 5px 0 5px;
+}
+
+.navbar a{
+  text-decoration: none;
+  color: #03045e;
+  transition: all  0.2s ease ;
+}
+
+.navbar a:hover{
+  transform: scale(1.2);
+  color: #03045e;
+  background-color: #48cae4;
+}
+
+
+.navbar a:focus{
+  transform: scale(1.2);
+  color: #03045e;
+  background-color: #48cae4;
+}
+
+ 
+.sections{
+  width: 100%; 
+  height: 100vh;
+  background-color: #caf0f8;
+  box-sizing: border-box;
+}
+
+#welcome-section{
+  max-width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#welcome-section img{
+  max-width: 100%;
+  width: clamp(200px, 30vw , 500px);
+  border-radius: 50%; 
+  outline: 2px solid #48cae4;
+  box-shadow: 2px 5px 1em  #48cae4;
+}
+
+@keyframes writing{
+    from { max-width: 0 }
+  to { max-width: 100% }
+    }
+
+  @keyframes blink-caret {
+  
+  from {border-color: #48cae4}
+  20%{border-color:  transparent}
+  40%{border-color: #48cae4}
+  60%{border-color:  transparent}
+  80%{border-color: #48cae4}
+  to{ border-color:  transparent}
+}
+
+#welcome-section :is(h1, p){
+  color: #48cae4;
+  text-shadow: 2px 5px 5px  #31899a;
+  font-weight: bold;
+  border-right: 0.15em solid transparent;
+  white-space: nowrap;
+  overflow: hidden;
+
+}
+
+
+#welcome-section .p1{
+  width: calc(6ch + 2rem);
+  font-size: 6vw;
+  animation: 
+    writing 2s steps(20, end)  ,
+    blink-caret 1s step-end  ;
+}
+
+#welcome-section .p2{
+  width: calc(6ch + 2rem);
+  font-size: 5vw;
+  animation: 
+    writing 2s steps(20, end) 1.2s both,
+    blink-caret 1s step-end 1.2s;
+}
+
+#welcome-section .p3{
+  width: calc(13ch + 1rem);
+  font-size: 5vw;
+  animation: 
+    writing 2.5s steps(25, end) both 2.2s,
+    blink-caret 1s step-end infinite 2.2s;
+}
+
+#project-section{
+ max-height: 100%;
+ background-color: #48cae4;
+ display: flex;
+ flex-wrap: wrap;
+ padding: 2em 13vw 0 13vw;
+ color: #03045e;
+}
+
+#project-section h2{
+  margin-top: 2rem;
+  width: 100%;
+  font-size: 2rem;
+  text-align: center;
+}
+
+ .project-tile{
+  padding-right: 10px;
+  max-width: 450px;
+  min-width: 200px;
+  margin: auto;
+  flex: 0 1 calc(50%);
+  text-align: center;
+  transition: transform 0.3s ease;
+  
+}
+
+.project-tile:hover{
+  transform: translateY(-8px) scale(1.03);
+  
+}
+
+.project-tile a{
+  text-decoration: none;
+  color: #03045e;
+  display: block;
+}
+
+.project-tile a:hover{
+  color: #023e8a;
+  border-top: 1px solid #023e8a;
+}
+
+.project-tile img{
+  border-radius: 10px;
+  border: 1px solid #03045e;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+
+
+#skills{
+  padding-top: 4rem;
+  font-size: 2rem;
+  background-color: #03045e;
+}
+
+#skills h2{
+  text-align: center;
+  color: #48cae4;
+}
+
+.skills-list{
+  margin-top: 5rem;
+  list-style: none;
+  padding-bottom: 3rem;
+  color: #48cae4;
+  border-bottom: 3px solid #48cae4;
+}
+
+.skills-list li{
+   padding-bottom: 1rem;
+}
+
+#skills i{
+  font-size: 3rem;
+  color: #caf0f8
+}
+#skills p{
+  color: #48cae4;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  opacity: 0.8;
+}
+
+ 
+  footer{
+  height: 15vh;
+  border-top: 3px solid #48cae4;
+  text-align: right;
+  padding: 1rem;
+  color: #03045e;
+  }
+
+  .contact p{
+  color: #03045e;
+  
+  }
+
+  .contact a{
+  color: #03045e;
+  transition: text-shadow 0.3s ease-in-out;
+  }
+
+  .contact a:hover {
+  text-shadow: 1px 1px 2px #023e8a
+}
+
+@media (max-width: 767px) {
+  #welcome-section{
+  flex-wrap: wrap;
+  margin-top: 4rem;
+}
+
+#welcome-section .p1{
+  
+  font-size: 10vw;
+  
+}
+
+#welcome-section .p2{
+  font-size: 8vw;
+ 
+}
+
+#welcome-section .p3{
+  font-size: 8vw;
+}
+header :is(p ,a){
+  margin: 1px;
+  background-color: rgba(255, 255, 255, 0.408);
+}
+
+}
+ 
+
+
+** end of styles.css **
+
