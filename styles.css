@@ -274,5 +274,8 @@ header :is(p ,a){
   margin: 1px;
   background-color: rgba(255, 255, 255, 0.408);
 }
-
+  .sections{
+  min-height: 100svh;
+  }
 }
+
