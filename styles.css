@@ -274,12 +274,8 @@ header :is(p ,a){
   margin: 1px;
   background-color: rgba(255, 255, 255, 0.408);
 }
-  .sections{
-  height: 100svh;
-  }
-  html {
-  scroll-behavior: auto;
+  
 }
-}
+
 
 
